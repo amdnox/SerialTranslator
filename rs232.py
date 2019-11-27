@@ -17,7 +17,7 @@ while True:
      xinput=serialin.readline()
      xoutput=serialout.readline()
      #Check for pattern
-     #100A BT1
+ 
      if xinput == "23415620313E312C313E320D0A".decode("hex") or xoutput == "23415620313E312C313E320D0A".decode("hex"):
           #Consolen Output
           print("01818181".decode("hex"))
@@ -29,7 +29,7 @@ while True:
           time.sleep(0.5)
           serialin.write("01818281".decode("hex"))
           serialout.write("01818281".decode("hex"))
-      #100A BT2
+     
      if xinput == "23415620323E312C323E320D0A".decode("hex") or xoutput == "23415620323E312C323E320D0A".decode("hex"):
           #Consolen Output
           print("01828181".decode("hex"))
@@ -41,7 +41,7 @@ while True:
           time.sleep(0.5)
           serialin.write("01828281".decode("hex"))
           serialout.write("01828281".decode("hex"))     
-      #100A PC
+
      if xinput == "23415620363E312C363E320D0A".decode("hex") or xoutput == "23415620363E312C363E320D0A".decode("hex"):
           #Consolen Output
           print("01868181".decode("hex"))
@@ -54,7 +54,7 @@ while True:
           serialin.write("01868281".decode("hex"))
           serialout.write("01868281".decode("hex"))        
 
-     #100B BT4
+     
      if xinput == "23415620343E332C343E340D0A".decode("hex") or xoutput == "23415620343E332C343E340D0A".decode("hex"):
           #Consolen Output
           print("01848381".decode("hex"))
@@ -67,7 +67,7 @@ while True:
           serialin.write("01848481".decode("hex"))
           serialout.write("01848481".decode("hex"))
       
-      #100B BT3
+      
      if xinput == "23415620333E332C333E340D0A".decode("hex") or xoutput == "23415620333E332C333E340D0A".decode("hex"):
           #Consolen Output
           print("01838381".decode("hex"))
@@ -79,7 +79,7 @@ while True:
           time.sleep(0.5)
           serialin.write("01838481".decode("hex"))
           serialout.write("01838481".decode("hex"))     
-      #100B PC
+      
      if xinput == "23415620363E332C363E340D0A".decode("hex") or xoutput == "23415620363E332C363E340D0A".decode("hex"):
           #Consolen Output
           print("01868381".decode("hex"))
